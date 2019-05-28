@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Such An Amazing Game!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <img id="life-three" src="images/life-3.png" />
+      <img id="life-two" src="images/life-2.png" />
+      <img id="life-one" src="images/life-1.png" />
+      <img id="life-zero" src="images/life-0.png" />
+      <div id="game-start">
+        <h1 id="title">Save the Turtles</h1>
+        <p id="rules">
+          Avoid the plastic bags to save Squirt and the planet!
+        </p>
+        <button id="start-game">Start Game</button>
+      </div>
+      <div id="game-end">
+        <h1 id="lost-title">RIP Squirt</h1>
+        <p id="lost-desc">
+          Oh no you lost!<br />
+          Visit ourplanet.com for better ways to save the planet.
+        </p>
+        <button id="restart">Restart Game</button>
+      </div>
+      <div id="hide"></div>
+      </div>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/enemy.js"></script>
+    <script src="js/jellyfish.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/text.js"></script>
+    <script src="js/engine-utilities.js"></script>
+    <script src="js/engine.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

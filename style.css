@@ -1,0 +1,105 @@
+body {
+  background-image: url("images/shore.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  position: relative;
+  width: 500px;
+  height: 745px;
+  margin: 0 auto;
+  border: 1px dotted black;
+  background-image: url("images/water.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.player {
+  height: 93px;
+  width: 70px;
+}
+
+.enemy,
+.jelly {
+  height: 100px;
+  width: 70px;
+}
+
+#game-start {
+  text-align: center;
+  margin-top: 210px;
+  font-family: "Indie Flower", cursive;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+p {
+  font-size: 30px;
+  margin: 10px 30px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#game-end {
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  font-family: "Indie Flower", cursive;
+  width: 100%;
+  visibility: hidden;
+  z-index: 20;
+}
+
+#start-game,
+#restart {
+  background-image: url("images/water-copy.jpg");
+  border: none;
+  margin: 20px;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Indie Flower", cursive;
+  box-shadow: 2px 2px;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#life-three,
+#life-two,
+#life-one,
+#life-zero {
+  position: absolute;
+  top: 20px;
+  left: 355px;
+  width: 130px;
+  height: 40px;
+  z-index: 2000;
+}
+
+#life-two,
+#life-one,
+#life-zero {
+  visibility: hidden;
+}
+
+#hide {
+  position: absolute;
+  background-image: url("images/shore-copy.jpg");
+  height: 100px;
+  width: 500px;
+  top: 746px;
+  z-index: 2000;
+}
